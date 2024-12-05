@@ -21,6 +21,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         timer.timeout.connect(self.clear_label)
         timer.start(2000)
 
+    # Исчезновение числа
     def clear_label(self):
         self.label_2.setText("")
 
