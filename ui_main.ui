@@ -96,12 +96,7 @@ border-radius: 7px;
          <enum>Qt::LayoutDirection::LeftToRight</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true">font-size: 20pt;
-color: rgb(221, 221, 221);
-background-color: rgba(255, 255, 255, 50);
-border: 1px solid rgba(255, 255, 255, 80);
-border-radius: 7px;
-</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string/>
