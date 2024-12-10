@@ -86,7 +86,7 @@ border-radius: 7px;
         </property>
         <property name="font">
          <font>
-          <pointsize>20</pointsize>
+          <pointsize>30</pointsize>
           <italic>false</italic>
           <bold>true</bold>
           <underline>false</underline>
@@ -96,7 +96,12 @@ border-radius: 7px;
          <enum>Qt::LayoutDirection::LeftToRight</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font-size: 30pt;
+color: rgb(221, 221, 221);
+background-color: rgba(255, 255, 255, 50);
+border: 1px solid rgba(255, 255, 255, 80);
+border-radius: 7px;
+</string>
         </property>
         <property name="text">
          <string/>

@@ -45,7 +45,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         reset_timer.start(2000)
 
     def reset_label_and_generate_new(self):
-        self.label_2.setStyleSheet("")
+        self.label_2.setStyleSheet(u"font-size: 30pt;\n"
+                                 "color: rgb(221, 221, 221);\n"
+                                 "background-color: rgba(255, 255, 255, 50);\n"
+                                 "border: 1px solid rgba(255, 255, 255, 80);\n"
+                                 "border-radius: 7px;\n"
+                                 "")
         self.show_number_temporarily()
 
     def shutdown_computer(self):
