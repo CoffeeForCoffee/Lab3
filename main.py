@@ -3,6 +3,7 @@ from PySide6.QtCore import QTimer
 from ui_main import Ui_MainWindow
 import sys
 import random
+import os
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -35,6 +36,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.label_2.setStyleSheet("background-color: green; color: white;")
         else:
             self.label_2.setStyleSheet("background-color: red; color: white;")
+            self.shutdown_computer()
 
         # Таймер для сброса цвета и генерации нового числа
         reset_timer = QTimer(self)
@@ -46,6 +48,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.label_2.setStyleSheet("")
         self.show_number_temporarily()
 
+    def shutdown_computer(self):
+        if sys.platform == "win32":
+            os.system("shutdown /s /t 0")
+        else:
+            os.system("shutdown -h now")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
